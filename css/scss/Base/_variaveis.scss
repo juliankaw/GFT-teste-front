@@ -1,0 +1,16 @@
+$body-color: #f7f7f7;
+$main-color: #87478f;
+$second-color: #e63888;
+
+
+
+body, html{
+  overflow-x: hidden;
+}
+
+body{
+  background-color: $body-color;
+  text-rendering: optimizeLegibility;
+  font-family: 'Roboto', sans-serif;
+ 
+}

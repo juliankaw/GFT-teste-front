@@ -1,0 +1,98 @@
+header{
+  background-color: #fff;
+  padding: 13px 0;
+  box-shadow: 0 3px 4px rgba(0,0,0,.2);
+  .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .menu{
+    display: flex;
+    align-items: center;
+    ul{
+      li{
+        display: inline-block;
+        font-size: 16px;
+        margin: 0 15px;
+        a{
+          text-decoration: none;
+          color: $main-color;
+          padding: 10px 0;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+      .dropdown-menu{
+        position: relative;
+        padding-right: 15px;
+        &::before, &::after{
+          position: absolute;
+          top: 50%;
+          width: 6px;
+          height: 2px;
+          content: ' ';
+          -webkit-transition: .3s;
+          transition: .3s;
+          background: #87478f;
+        }
+        &::before{
+          right: 4px;
+          transform: translate3d(0,-50%,0) rotate(45deg);
+        }
+        &::after{
+          right: 0;
+          transform: translate3d(0,-50%,0) rotate(-45deg);
+        }
+        
+        > ul{
+          position: absolute;
+          background-color: #fff;
+          padding: 20px;
+          width: 170px;
+          right: 0;
+          top: 35px;
+          border-top: 3px solid $main-color;
+          border-radius: 3px;
+          display: none;
+          -webkit-box-shadow: -2px 2px 17px -8px rgba(0,0,0,0.75);
+          -moz-box-shadow: -2px 2px 17px -8px rgba(0,0,0,0.75);
+          box-shadow: -2px 2px 17px -8px rgba(0,0,0,0.75);
+          z-index: 2;
+          >li{
+            margin: 0 0 12px 0;
+            display: block;
+            font-size: 14px;
+            a{
+              color: #000;
+            }
+          }
+        }
+      }
+      .dropdown-menu.activeClass{
+        &::before{
+          transform: translate3d(0,-50%,0) rotate(-45deg);
+        }
+        &::after{
+          transform: translate3d(0,-50%,0) rotate(45deg);
+        }
+      }
+    }
+    .button{
+      background-color: #446ea9;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 700;
+      padding: 12px 46px;
+      border-radius: 6px;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: all .3s;
+      &:hover{
+        background: #355685;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+
+Observações:
+
+O projeto foi feito em html, css, javascript(puro) e utilizei pré-processador css(sass) e 
+o gulp como automatizador de tarefas.
+
+Instruções:
+
+- Usando um terminal, entrar na pasta teste-GFT
+- rodar o código npm install (para instalar a pasta com as dependências do projeto)
+- Em seguida rodar o comando: gulp  OU npm run gulp.
+
+
+Obrigado! :)
+
+
